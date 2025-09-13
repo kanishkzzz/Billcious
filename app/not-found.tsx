@@ -6,12 +6,12 @@ import { Home } from "lucide-react";
 import Link from "next/link";
 import { useEffect } from "react";
 
-interface ErrorProps {
+interface AppErrorProps {
   error: Error;
   reset: () => void;
 }
 
-export default function Error({ error, reset }: ErrorProps) {
+export default function Error({ error, reset }: AppErrorProps) {
   useEffect(() => {
     // Log the error to an error reporting service
     console.error(error);
